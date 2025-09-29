@@ -10,6 +10,6 @@ int main(){
 	const std::string msg = GreetingUtils::create_message(constname);
 	char* msg_as_c = GreetingUtils::format_as_c_string(msg);
 	std::cout << msg_as_c << std::endl; 
-	delete(msg_as_c); 	
+	delete[] msg_as_c; 	
 	return 0;
 }
